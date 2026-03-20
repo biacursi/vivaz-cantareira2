@@ -77,8 +77,8 @@ body {
   padding: 6px 16px; border-radius: 30px; font-size: 0.9rem; font-weight: 600; 
   text-transform: uppercase; letter-spacing: 1px; margin-bottom: 24px; 
 }
-.hero-content h1 { font-size: 3rem; line-height: 1.0; font-weight: 700; text-wrap: balance;}
-.hero-content h2 { font: 500 3rem "Merriweather", serif }
+.hero-content h1 { font-size: 3rem; line-height: 1.0; font-weight: 700; text-wrap: balance;margin-bottom:12px; }
+.hero-content h2 { font: 500 3rem/1.0 "Merriweather", serif; margin-bottom:12px;}
 .hero-content p { font-size: 1.2rem; color: rgba(255,255,255,0.9); margin-bottom: 32px; font-weight: 400; }
 .hero-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;}
 
@@ -217,7 +217,7 @@ body {
 
 /* Responsivo */
 @media (max-width: 768px) {
-  .hero-content h1 { font-size: 2.2rem; }
+  .hero-content h1,  .hero-content h2 { font-size: 2.2rem; }
   .airbnb-gallery { grid-template-columns: 1fr; grid-template-rows: 250px 150px 150px; }
   .gallery-item.large { grid-row: span 1; }
   .planta-container, .condo-grid { grid-template-columns: 1fr; gap: 24px; }
