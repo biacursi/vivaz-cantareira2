@@ -78,7 +78,7 @@ body {
   text-transform: uppercase; letter-spacing: 1px; margin-bottom: 24px; 
 }
 .hero-content h1 { font-size: 3rem; line-height: 1.0; font-weight: 700; text-wrap: balance;margin-bottom:12px; }
-.hero-content h2 { font: 500 3rem/1.0 "Merriweather", serif; margin-bottom:12px;}
+.hero-content h2 { font: 500 3rem/1.0 "Merriweather", serif; padding-bottom:16px;}
 .hero-content p { font-size: 1.2rem; color: rgba(255,255,255,0.9); margin-bottom: 32px; font-weight: 400; }
 .hero-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;}
 
