@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apartamento à Venda - Vivaz Cantareira 2</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">Vivaz Cantareira 2</a>
+      <ul class="nav-links">
+        <li><a href="#galeria">Fotos</a></li>
+        <li><a href="#detalhes">Detalhes</a></li>
+        <li><a href="#planta">A Planta</a></li>
+        <li><a href="#condominio">Condomínio</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <button class="mobile-menu-btn" aria-label="Menu"><i class="ph ph-list"></i></button>
+    </div>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <span class="badge gsap-hero">Pronto para morar</span>
+      <h1 class="gsap-hero">Apartamento recém-entregue.<br>Seu novo lar espera por você.</h1>
+      <p class="gsap-hero">2 quartos ao lado do Cantareira Norte Shopping · Pirituba, São Paulo</p>
+      <div class="hero-buttons gsap-hero">
+        <a href="#galeria" class="btn btn-outline-light"><i class="ph ph-image"></i> Ver Fotos</a>
+        <a href="https://wa.me/5511959946277?text=Ol%C3%A1!%20Tenho%20interesse%20no%20apartamento%20do%20Vivaz%20Cantareira%202." target="_blank" class="btn btn-whatsapp"><i class="ph ph-whatsapp-logo"></i> Falar com Bianca</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="galeria" class="airbnb-section section-padding gsap-section">
+    <div class="container">
+      <div class="airbnb-gallery">
+        <div class="gallery-item large" onclick="openGallery()">
+          <img src="piscina.jpg" alt="Piscina do Condomínio">
+        </div>
+        <div class="gallery-item small" onclick="openGallery()">
+          <img src="churrasqueira.jpg" alt="Churrasqueira">
+        </div>
+        <div class="gallery-item small" onclick="openGallery()">
+          <img src="academia.jpg" alt="Academia">
+        </div>
+        <button class="btn-show-all" onclick="openGallery()">
+          <i class="ph ph-squares-four"></i> Mostrar todas as fotos
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="detalhes" class="details-section section-padding gsap-section">
+    <div class="container">
+      <h2>O que você vai encontrar</h2>
+      <div class="features-grid">
+        <div class="feature-card"><i class="ph ph-sparkle"></i><p>Apartamento novo – chaves recém-entregues</p></div>
+        <div class="feature-card"><i class="ph ph-bed"></i><p>2 quartos com piso laminado incluso</p></div>
+        <div class="feature-card"><i class="ph ph-map-pin"></i><p>Excelente localização em Pirituba</p></div>
+        <div class="feature-card"><i class="ph ph-swimming-pool"></i><p>Piscina e áreas de lazer completas</p></div>
+        <div class="feature-card"><i class="ph ph-buildings"></i><p>Infraestrutura de segurança 24h</p></div>
+        <div class="feature-card"><i class="ph ph-shopping-bag"></i><p>Ao lado do Cantareira Norte Shopping</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="planta" class="planta-section section-padding gsap-section">
+    <div class="container planta-container">
+      <div class="planta-text">
+        <h2>Planta Inteligente</h2>
+        <p>Aproveitamento total dos espaços. O apartamento conta com medição individualizada de água, piso laminado nos quartos, infraestrutura para TV e muito mais. Perfeito para o seu dia a dia.</p>
+      </div>
+      <div class="planta-img-wrapper" onclick="openGallery(0)">
+        <img src="planta.png" alt="Planta do Apartamento" class="planta-img">
+        <div class="zoom-hint"><i class="ph ph-magnifying-glass-plus"></i> Clique para ampliar</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="condominio" class="condo-section section-padding gsap-section">
+    <div class="container condo-grid">
+      <img src="playground.jpg" alt="Playground do Condomínio" class="condo-img">
+      <div class="condo-info">
+        <h2>Lazer de Clube</h2>
+        <p>O Vivaz Cantareira 2 oferece tudo o que você precisa para viver com conforto, sem sair de casa.</p>
+        <ul class="condo-list">
+          <li><i class="ph ph-check-circle"></i> Piscina adulto e infantil</li>
+          <li><i class="ph ph-check-circle"></i> Academia equipada</li>
+          <li><i class="ph ph-check-circle"></i> Brinquedoteca e Playground</li>
+          <li><i class="ph ph-check-circle"></i> Camarote / Salão de Jogos</li>
+          <li><i class="ph ph-check-circle"></i> Espaço Beleza e Lavanderia</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="contact-section section-padding gsap-section">
+    <div class="container text-center">
+      <h2>Agende sua Visita</h2>
+      <p>Fale conosco para tirar dúvidas ou conhecer o seu novo lar.</p>
+      <div class="contact-buttons">
+        <a href="https://wa.me/5511959946277?text=Ol%C3%A1!%20Tenho%20interesse%20no%20apartamento%20do%20Vivaz%20Cantareira%202." target="_blank" class="btn btn-whatsapp"><i class="ph ph-whatsapp-logo"></i> Bianca – (11) 95994-6277</a>
+        <a href="https://wa.me/5585986201821?text=Ol%C3%A1!%20Tenho%20interesse%20no%20apartamento%20do%20Vivaz%20Cantareira%202." target="_blank" class="btn btn-outline"><i class="ph ph-phone"></i> Vanessa – (85) 98620-1821</a>
+      </div>
+      <a href="mailto:biancacursi@hotmail.com" class="email-link"><i class="ph ph-envelope-simple"></i> biancacursi@hotmail.com</a>
+    </div>
+  </section>
+
+<footer class="footer gsap-section">
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.816474149832!2d-46.7414925!3d-23.4670414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cefcf0572cf84d%3A0x228f122769ea6901!2sEstr.%20do%20Corredor%2C%20280%20-%20Jaragu%C3%A1%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002992-210!5e0!3m2!1spt-BR!2sbr!4v1710400000000!5m2!1spt-BR!2sbr" 
+        width="100%" 
+        height="350" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Vivaz Cantareira 2. Estrada do Corredor, 280 - Jaraguá/Pirituba.</p>
+      <p>Desenvolvido por <a href="https://instagram.com/biacursi" target="_blank">@biacursi</a></p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5511959946277?text=Ol%C3%A1!%20Tenho%20interesse%20no%20apartamento%20do%20Vivaz%20Cantareira%202." target="_blank" class="floating-whatsapp">
+    <i class="ph ph-whatsapp-logo"></i>
+  </a>
+
+  <div id="gallery-modal" class="modal">
+    <div class="modal-header">
+      <h2>Galeria de Fotos</h2>
+      <button class="close-btn" onclick="closeGallery()"><i class="ph ph-x"></i></button>
+    </div>
+    <div class="modal-content" id="gallery-content">
+      </div>
+  </div>
+
+  <div id="carousel-modal" class="carousel-modal">
+    <button class="close-carousel" onclick="closeCarousel()"><i class="ph ph-x"></i></button>
+    <button class="carousel-nav prev" onclick="prevImage()"><i class="ph ph-caret-left"></i></button>
+    <img id="carousel-image" src="" alt="Imagem ampliada">
+    <button class="carousel-nav next" onclick="nextImage()"><i class="ph ph-caret-right"></i></button>
+    <div id="carousel-counter" class="carousel-counter"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  
+  <script src="script.js"></script>
+</body>
+</html>

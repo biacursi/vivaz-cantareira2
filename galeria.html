@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria Completa | Vivaz Cantareira 2</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body class="bg-light">
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><i data-lucide="chevron-left"></i> Voltar ao Site</a>
+        </div>
+    </nav>
+
+    <section class="section" style="margin-top: 80px;">
+        <h1 class="text-center mb-4">Galeria de Fotos</h1>
+        
+        <div class="filter-container">
+            <button class="filter-btn active" onclick="renderFullGallery('todos')">Todos</button>
+            <button class="filter-btn" onclick="renderFullGallery('lazer')">Lazer</button>
+            <button class="filter-btn" onclick="renderFullGallery('apartamento')">Apartamento</button>
+            <button class="filter-btn" onclick="renderFullGallery('fachada')">Fachada</button>
+        </div>
+
+        <div id="full-gallery-grid" class="full-gallery"></div>
+    </section>
+
+    <div id="photo-modal" class="modal hidden">
+        <button class="modal-close" onclick="closeModal()"><i data-lucide="x"></i></button>
+        <button class="nav-btn prev" onclick="changePhoto(-1)"><i data-lucide="chevron-left"></i></button>
+        <div class="modal-content">
+            <img id="modal-img" src="">
+            <p id="modal-caption" class="caption"></p>
+        </div>
+        <button class="nav-btn next" onclick="changePhoto(1)"><i data-lucide="chevron-right"></i></button>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Inicializa a galeria completa assim que carregar
+        window.onload = () => renderFullGallery('todos');
+    </script>
+</body>
+</html>
