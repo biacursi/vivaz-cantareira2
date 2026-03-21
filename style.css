@@ -78,7 +78,7 @@ body {
   text-transform: uppercase; letter-spacing: 1px; margin-bottom: 24px; 
 }
 .hero-content h1 { font:600 4rem / 1.125 Poppins, sans-serif; text-wrap: balance;margin-bottom:12px; }
-.hero-content h2 { font: 500 4rem/1.125; padding-bottom:16px;}
+.hero-content h2 { font:500 4rem / 1.125; padding-bottom:16px;}
 .hero-content p { font-size: 1.2rem; color: rgba(255,255,255,0.9); margin-bottom: 32px; font-weight: 400; }
 .hero-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;}
 
