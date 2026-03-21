@@ -24,7 +24,7 @@
 body {
   background-color: var(--white);
   color: var(--text);
-  line-height: 1.6;
+  line-height: 1.5;
   overflow-x: hidden; /* Evita rolagem horizontal com animações */
 }
 
@@ -77,7 +77,7 @@ body {
   padding: 6px 16px; border-radius: 30px; font-size: 0.9rem; font-weight: 600; 
   text-transform: uppercase; letter-spacing: 1px; margin-bottom: 24px; 
 }
-.hero-content h1 { font-size: 3rem; line-height: 1.0; font-weight: 700; text-wrap: balance;margin-bottom:12px; }
+.hero-content h1 { font:600 4rem / 1.125 Poppins, sans-serif; text-wrap: balance;margin-bottom:12px; }
 .hero-content h2 { font: 500 3rem/1.0 "Merriweather", serif; padding-bottom:16px;}
 .hero-content p { font-size: 1.2rem; color: rgba(255,255,255,0.9); margin-bottom: 32px; font-weight: 400; }
 .hero-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;}
@@ -110,7 +110,7 @@ body {
 .btn-show-all:hover { background: var(--secondary); }
 /* Detalhes - Ajustado para mais cards */
 .details-section { background: var(--secondary); }
-.details-section h2 { font-family: "Merriweather", serif; text-align: center; margin-bottom: 40px; font-size: 2rem; }
+.details-section h2 { font: 600 Poppins, sans-serif; text-align: center; margin-bottom: 40px; font-size: 2rem; }
 
 .features-grid { 
   display: grid; 
@@ -155,7 +155,7 @@ body {
 
 /* Planta */
 .planta-container { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
-.planta-text h2 { font-family: "Merriweather", serif; font-size: 2rem; margin-bottom: 16px; }
+.planta-text h2 { font: 600 Poppins, sans-serif; font-size: 2rem; margin-bottom: 16px; }
 .planta-img-wrapper { position: relative; cursor: pointer; border-radius: var(--radius-md); overflow: hidden; border: 1px solid #eee; }
 .planta-img { width: 100%; display: block; transition: transform 0.3s; }
 .planta-img-wrapper:hover .planta-img { transform: scale(1.02); }
@@ -164,14 +164,14 @@ body {
 /* Condomínio */
 .condo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
 .condo-img { width: 100%; border-radius: var(--radius-lg); height: 400px; object-fit: cover; }
-.condo-info h2 { font-family: "Merriweather", serif; font-size: 2rem; margin-bottom: 16px; }
+.condo-info h2 { font: 600 Poppins, sans-serif; font-size: 2rem; margin-bottom: 16px; }
 .condo-list { list-style: none; margin-top: 20px; }
 .condo-list li { margin-bottom: 12px; display: flex; align-items: center; gap: 8px; font-weight: 500;}
 .condo-list i { color: var(--primary); font-size: 1.2rem;}
 
 /* Contato */
 .contact-section { background: var(--primary); color: var(--white); }
-.contact-section h2 { font-family: "Merriweather", serif; font-size: 2.5rem; margin-bottom: 16px; }
+.contact-section h2 { font: 600 Poppins, sans-serif; font-size: 2.5rem; margin-bottom: 16px; }
 .contact-buttons { display: flex; justify-content: center; gap: 16px; margin: 32px 0; flex-wrap: wrap;}
 .btn-outline { border: 1px solid rgba(255,255,255,0.3); color: var(--white); background: rgba(255,255,255,0.05); }
 .btn-outline:hover { background: rgba(255,255,255,0.1); }
